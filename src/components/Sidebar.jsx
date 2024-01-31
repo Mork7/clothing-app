@@ -1,6 +1,10 @@
-export default function Sidebar({isOpen}) {
+export default function Sidebar({isOpen, onButtonClick }) {
   const buttonStyles =
     "bg-blue-500 hover:bg-purple-300 text-white  py-2 rounded w-full";
+
+    const handleOnButtonClick = (buttonId) => {
+      onButtonClick(buttonId)
+    }
 
   return (
     <div
@@ -11,19 +15,22 @@ export default function Sidebar({isOpen}) {
     >
       <ul className="p-3">
         <li className="mb-4">
-          <button className={buttonStyles}>Womens</button>
+          <button onClick={() => handleOnButtonClick("women")} className={buttonStyles}>Womens</button>
         </li>
         <li className="mb-4">
-          <button className={buttonStyles}>Mens</button>
+          <button onClick={() => handleOnButtonClick("men")} className={buttonStyles}>Mens</button>
         </li>
         <li className="mb-4">
-          <button className={buttonStyles}>Seasonal</button>
+          <button onClick={() => handleOnButtonClick("seasonal")} className={buttonStyles}>Seasonal</button>
         </li>
         <li className="mb-4">
-          <button className={buttonStyles}>Children</button>
+          <button onClick={() => handleOnButtonClick("children")} className={buttonStyles}>Children</button>
         </li>
         <li className="mb-4">
-          <button className={buttonStyles}>Shoes</button>
+          <button onClick={() => handleOnButtonClick("shoes")} className={buttonStyles}>Shoes</button>
+        </li>
+        <li className="mb-4">
+          <button onClick={() => handleOnButtonClick("hats")} className={buttonStyles}>Hats</button>
         </li>
       </ul>
     </div>

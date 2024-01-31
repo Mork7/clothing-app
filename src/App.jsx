@@ -9,6 +9,7 @@ import { useState } from "react";
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [activeScreen, setActiveScreen] = useState("women");
 
   const handleToggleModal = () => {
     setIsModalOpen(prev => {
@@ -22,6 +23,11 @@ function App() {
     })
   };
 
+  const handleSidebarClick = (buttonId) => {
+    setActiveScreen(buttonId);
+    setIsSidebarOpen(false)
+  }
+
   return (
     <CartProvider>
       <MuiAppBar
@@ -33,9 +39,14 @@ function App() {
           <CartModal onClose={handleToggleModal} />
         )}
         {isSidebarOpen && (
-          <Sidebar isOpen={isSidebarOpen}/>
+          <Sidebar isOpen={isSidebarOpen} onButtonClick={handleSidebarClick}/>
         )}
-        <Catalog />
+        {activeScreen === "women" &&  <Catalog activeScreen={activeScreen} />}
+        {activeScreen === "men" &&  <Catalog activeScreen={activeScreen} />}
+        {activeScreen === "seasonal" &&  <Catalog activeScreen={activeScreen} />}
+        {activeScreen === "children" &&  <Catalog activeScreen={activeScreen} />}
+        {activeScreen === "shoes" &&  <Catalog activeScreen={activeScreen} />}
+        {activeScreen === "hats" &&  <Catalog activeScreen={activeScreen} />}
       </main>
     </CartProvider>
   );

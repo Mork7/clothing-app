@@ -3,120 +3,127 @@
     "id": 1,
     "image": "https://img.kwcdn.com/thumbnail/s/b0544fc47aeab62fb073d3e7dc496daf_d37e3733c1ad.jpg?imageView2/2/w/800/q/70",
     "description": "Slim Fit Cotton Shirt",
-    "price": 29.99
+    "price": 29.99,
+    "tags": ["women"] 
   },
   {
     "id": 2,
     "image": "https://img.kwcdn.com/thumbnail/s/873d33685f5b0b4b2894ef5fc08f1e04_98477bc954bc.jpg?imageView2/2/w/800/q/70",
     "description": "Classic Denim Jeans",
-    "price": 49.99
+    "price": 49.99,
+    "tags": ["women"] 
   },
   {
     "id": 3,
     "image": "https://www.belleandbloom.com/cdn/shop/products/just-friends-brown-leather-jacket-front_ed28e7d2-68c1-4dbc-be29-693646a4c7d2_347x.jpg?v=1684800097&width=462",
     "description": "Leather Jacket",
-    "price": 89.99
-  },
-  {
-    "id": 4,
-    "image": "https://i.insider.com/60eefb33a8d8c00019b031be?width=700",
-    "description": "White Sneakers",
-    "price": 59.99
+    "price": 89.99,
+    "tags": ["women"] 
   },
   {
     "id": 5,
     "image": "https://www.dynamiteclothing.com/dw/image/v2/BDRP_PRD/on/demandware.static/-/Sites-root_dynamite_catalog/default/dwb982924b/images/100065295/100065295_06V_1920x2880.jpg?sw=640&sh=960",
     "description": "Black Leather Belt",
-    "price": 19.99
+    "price": 19.99,
+    "tags": ["women"] 
   },
   {
     "id": 6,
     "image": "https://m.media-amazon.com/images/I/71TXfJMMxGS._AC_UY1000_.jpg",
     "description": "Sundress",
-    "price": 29.99
+    "price": 29.99,
+    "tags": ["women"] 
   },
   {
     "id": 7,
     "image": "https://cdn-img.prettylittlething.com/a/9/0/d/a90dde0ae814c9405a029182a9e1963872491217_cmd9877_1.jpg",
     "description": "Black Jeans",
-    "price": 49.99
+    "price": 49.99,
+    "tags": ["women"] 
   },
   {
     "id": 8,
     "image": "https://m.media-amazon.com/images/I/61il-488nzL._AC_SY445_.jpg",
     "description": "Demin Jacket",
-    "price": 89.99
+    "price": 89.99,
+    "tags": ["women"] 
   },
   {
     "id": 9,
     "image": "https://pinkmartinicollection.com/cdn/shop/products/Pinkmartini61f430872e568961f430872e683.4107546361f430872e683.jpg?v=1664908509",
     "description": "Leather Pants",
-    "price": 159.99
+    "price": 159.99,
+    "tags": ["women"] 
   },
   {
     "id": 10,
     "image": "https://m.media-amazon.com/images/I/91uZPR5NO6L._AC_SY550_.jpg",
     "description": "Crop-top",
-    "price": 19.99
+    "price": 19.99,
+    "tags": ["women"] 
   },
-  {
-    "id": 11,
-    "image": "https://img.kwcdn.com/thumbnail/s/b0544fc47aeab62fb073d3e7dc496daf_d37e3733c1ad.jpg?imageView2/2/w/800/q/70",
-    "description": "Slim Fit Cotton Shirt",
-    "price": 29.99
-  },
-  {
-    "id": 12,
-    "image": "https://img.kwcdn.com/thumbnail/s/873d33685f5b0b4b2894ef5fc08f1e04_98477bc954bc.jpg?imageView2/2/w/800/q/70",
-    "description": "Classic Denim Jeans",
-    "price": 49.99
-  },
-  {
-    "id": 13,
-    "image": "https://www.belleandbloom.com/cdn/shop/products/just-friends-brown-leather-jacket-front_ed28e7d2-68c1-4dbc-be29-693646a4c7d2_347x.jpg?v=1684800097&width=462",
-    "description": "Leather Jacket",
-    "price": 89.99
-  },
+
   {
     "id": 14,
     "image": "https://i.insider.com/60eefb33a8d8c00019b031be?width=700",
     "description": "White Sneakers",
-    "price": 59.99
+    "price": 59.99,
+    "tags": ["men","shoes"] 
   },
   {
-    "id": 15,
-    "image": "https://www.dynamiteclothing.com/dw/image/v2/BDRP_PRD/on/demandware.static/-/Sites-root_dynamite_catalog/default/dwb982924b/images/100065295/100065295_06V_1920x2880.jpg?sw=640&sh=960",
-    "description": "Black Leather Belt",
-    "price": 19.99
+    "id": 21,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlPu1I8TTgX5El1PkDYM9oNp8bAgBZpDWMPQ&usqp=CAU",
+    "description": "Supra Vaders",
+    "price": 159.99,
+    "tags": ["men","shoes"] 
   },
   {
-    "id": 16,
-    "image": "https://m.media-amazon.com/images/I/71TXfJMMxGS._AC_UY1000_.jpg",
-    "description": "Sundress",
-    "price": 29.99
+    "id": 22,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgWSIUTxNr9fjt3mniLIdpNIVThlR3VMWACg&usqp=CAU",
+    "description": "Black Suit",
+    "price": 49.99,
+    "tags": ["men"] 
   },
   {
-    "id": 17,
-    "image": "https://cdn-img.prettylittlething.com/a/9/0/d/a90dde0ae814c9405a029182a9e1963872491217_cmd9877_1.jpg",
-    "description": "Black Jeans",
-    "price": 49.99
-  },
-  {
-    "id": 18,
-    "image": "https://m.media-amazon.com/images/I/61il-488nzL._AC_SY445_.jpg",
+    "id": 23,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfynC0o00qEwNTT1wC1ActzPPwQNYLStM4dwsSrUhChK68jvTAy1eVI8PYohdkpLxjJ8&usqp=CAU",
     "description": "Demin Jacket",
-    "price": 89.99
+    "price": 89.99,
+    "tags": ["men"] 
   },
   {
-    "id": 19,
-    "image": "https://pinkmartinicollection.com/cdn/shop/products/Pinkmartini61f430872e568961f430872e683.4107546361f430872e683.jpg?v=1664908509",
+    "id": 24,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb4lFPEvO50ER1nmR5bi-6HOsDLRfzmk60Mw&usqp=CAU",
     "description": "Leather Pants",
-    "price": 159.99
+    "price": 159.99,
+    "tags": ["men"] 
   },
   {
-    "id": 20,
-    "image": "https://m.media-amazon.com/images/I/91uZPR5NO6L._AC_SY550_.jpg",
-    "description": "Crop-top",
-    "price": 19.99
+    "id": 32,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY089WSD6Y9lr1LNyyJRmrGxq3aP1ZndDIpQ&usqp=CAU",
+    "description": "DC Hat",
+    "price": 19.99,
+    "tags": ["men","hats"] 
+  },
+  {
+    "id": 30,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStfynC0o00qEwNTT1wC1ActzPPwQNYLStM4dwsSrUhChK68jvTAy1eVI8PYohdkpLxjJ8&usqp=CAU",
+    "description": "Demin Jacket",
+    "price": 89.99,
+    "tags": ["men"] 
+  },
+  {
+    "id": 24,
+    "image": "data:image/jpeg;base64,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",
+    "description": "Sunhat",
+    "price": 59.99,
+    "tags": ["women","hats"] 
+  },
+  {
+    "id": 25,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ406ci84uqdG46gIuvIdy_lGdhWQ_Ga5D2JA&usqp=CAU",
+    "description": "Another Sundress",
+    "price": 19.99,
+    "tags": ["women"] 
   }
 ]
