@@ -41,6 +41,3 @@ A step by step series of examples that tell you how to get a development environ
 4. Start the development server:
    ```bash
    npm run dev
-
-
-
