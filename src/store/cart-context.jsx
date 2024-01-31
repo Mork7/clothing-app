@@ -25,20 +25,14 @@ export default function CartProvider({ children }) {
     }
   };
 
-  const removeItemFromCart = (itemId) => {
-    let updatedCart = [...cart];
-
-    updatedCart.filter((item) => item.id !== itemId);
-
+  const removeItemFromCart = (indexToRemove) => {
+    let updatedCart = cart.filter((item, index) => index !== indexToRemove);
     setCart(updatedCart);
-
   };
-
-  const updateItemQuantity = (itemId, quantity) => {};
-
+  
   return (
     <cartCtx.Provider
-      value={{ cart, addItemToCart, removeItemFromCart, updateItemQuantity }}
+      value={{ cart, addItemToCart, removeItemFromCart }}
     >
       {children}
     </cartCtx.Provider>

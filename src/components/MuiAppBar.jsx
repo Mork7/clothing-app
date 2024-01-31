@@ -1,4 +1,3 @@
-import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -6,8 +5,13 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import cartIcon from "../assets/cart-icon.png";
+import { cartCtx } from "../store/cart-context";
+import { useContext } from "react";
 
-export default function MenuAppBar() {
+export default function MenuAppBar({openModal}) {
+
+  const {cart} = useContext(cartCtx);
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{backgroundColor: "lightsteelblue", color: "black"}}>
@@ -25,9 +29,9 @@ export default function MenuAppBar() {
             Your Company Name
           </Typography>
           <div>
-            <button className="flex rounded-lg items-center bg- border-2 py-2 px-4 border-black hover:bg-purple-300">
+            <button className="flex rounded-lg items-center bg- border-2 py-2 px-4 border-black hover:bg-purple-300" onClick={openModal}>
               <img className="w-5 mr-1" src={cartIcon} alt="" />
-              {`(${0})`}
+              {`(${cart.length})`}
             </button>
           </div>
         </Toolbar>
