@@ -9,7 +9,7 @@ export default function Item({ id, image, description, price, onAddItemClick }) 
       <p>{description}</p>
       <p>${price}</p>
       <button
-        className="flex rounded-lg items-center bg- border-2 py-2 px-4 border-black hover:bg-purple-300"
+        className="flex rounded-lg items-center bg- border-2 py-2 px-4 border-black hover:bg-purple-300 active:translate-y-1"
         onClick={() => onAddItemClick(id)}
       >
         Add to cart

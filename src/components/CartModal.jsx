@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { cartCtx } from "../store/cart-context";
 
-export default function CartModal({ onClosed }) {
+export default function CartModal({ onClose }) {
   const { cart, removeItemFromCart } = useContext(cartCtx);
 
   const getTotalPrice = () => {
@@ -50,14 +50,15 @@ export default function CartModal({ onClosed }) {
           )}
           {cart.length !== 0 && (
             <button
-              onClick={onClosed}
+            //TODO: onClick = {handleCheckout}
+              onClick={onClose}
               className="bg-green-500 text-white px-4 py-2 my-2 rounded"
             >
               Go To Checkout
             </button>
           )}
           <button
-            onClick={onClosed}
+            onClick={onClose}
             className="bg-blue-500 text-white px-4 py-2 rounded"
           >
             Close
