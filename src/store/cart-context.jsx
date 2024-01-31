@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { createContext } from "react";
+import Items from "../assets/items.json";
 
 export const cartCtx = createContext({
   items: [],
@@ -11,11 +12,25 @@ export const cartCtx = createContext({
 export default function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
 
+  useEffect(() => {
+    console.log(cart);
+  },[cart])
+
   const addItemToCart = (itemId) => {
-    
+    let newItem = Items.find((item) => item.id === itemId);
+
+    if (newItem) {
+      let updatedCart = [...cart, newItem];
+      setCart(updatedCart);
+    }
   };
 
   const removeItemFromCart = (itemId) => {
+    let updatedCart = [...cart];
+
+    updatedCart.filter((item) => item.id !== itemId);
+
+    setCart(updatedCart);
 
   };
 
@@ -28,4 +43,4 @@ export default function CartProvider({ children }) {
       {children}
     </cartCtx.Provider>
   );
-};
+}
