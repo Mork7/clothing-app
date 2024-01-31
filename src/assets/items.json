@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "image": "https://img.kwcdn.com/thumbnail/s/b0544fc47aeab62fb073d3e7dc496daf_d37e3733c1ad.jpg?imageView2/2/w/800/q/70",
+    "description": "Slim Fit Cotton Shirt",
+    "price": 29.99
+  },
+  {
+    "id": 2,
+    "image": "https://img.kwcdn.com/thumbnail/s/873d33685f5b0b4b2894ef5fc08f1e04_98477bc954bc.jpg?imageView2/2/w/800/q/70",
+    "description": "Classic Denim Jeans",
+    "price": 49.99
+  },
+  {
+    "id": 3,
+    "image": "https://www.belleandbloom.com/cdn/shop/products/just-friends-brown-leather-jacket-front_ed28e7d2-68c1-4dbc-be29-693646a4c7d2_347x.jpg?v=1684800097&width=462",
+    "description": "Leather Jacket",
+    "price": 89.99
+  },
+  {
+    "id": 4,
+    "image": "https://i.insider.com/60eefb33a8d8c00019b031be?width=700",
+    "description": "White Sneakers",
+    "price": 59.99
+  },
+  {
+    "id": 5,
+    "image": "https://www.dynamiteclothing.com/dw/image/v2/BDRP_PRD/on/demandware.static/-/Sites-root_dynamite_catalog/default/dwb982924b/images/100065295/100065295_06V_1920x2880.jpg?sw=640&sh=960",
+    "description": "Black Leather Belt",
+    "price": 19.99
+  },
+  {
+    "id": 6,
+    "image": "https://m.media-amazon.com/images/I/71TXfJMMxGS._AC_UY1000_.jpg",
+    "description": "Sundress",
+    "price": 29.99
+  },
+  {
+    "id": 7,
+    "image": "https://cdn-img.prettylittlething.com/a/9/0/d/a90dde0ae814c9405a029182a9e1963872491217_cmd9877_1.jpg",
+    "description": "Black Jeans",
+    "price": 49.99
+  },
+  {
+    "id": 8,
+    "image": "https://m.media-amazon.com/images/I/61il-488nzL._AC_SY445_.jpg",
+    "description": "Demin Jacket",
+    "price": 89.99
+  },
+  {
+    "id": 9,
+    "image": "https://pinkmartinicollection.com/cdn/shop/products/Pinkmartini61f430872e568961f430872e683.4107546361f430872e683.jpg?v=1664908509",
+    "description": "Leather Pants",
+    "price": 159.99
+  },
+  {
+    "id": 10,
+    "image": "https://m.media-amazon.com/images/I/91uZPR5NO6L._AC_SY550_.jpg",
+    "description": "Crop-top",
+    "price": 19.99
+  }
+]
