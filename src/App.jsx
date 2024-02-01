@@ -4,6 +4,7 @@ import MuiAppBar from "./components/MuiAppBar";
 import Catalog from "./components/Catalog";
 import CartModal from "./components/CartModal";
 import Sidebar from "./components/Sidebar";
+import Footer from "./components/Footer";
 import { useState } from "react";
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
         {activeScreen === "shoes" &&  <Catalog activeScreen={activeScreen} />}
         {activeScreen === "hats" &&  <Catalog activeScreen={activeScreen} />}
       </main>
+      <Footer />
     </CartProvider>
   );
 }
