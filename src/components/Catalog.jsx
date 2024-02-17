@@ -13,7 +13,7 @@ export default function Catalog({activeScreen}) {
   return (
     <div className="flex flex-col text-center">
       <h1 className="text-4xl mt-4 capitalize">{activeScreen}</h1>
-      <div className="grid grid-cols-2 m-5 md:grid-cols-4 lg:grid-cols-5 bg-slate-200 rounded-md">
+      <div className="grid grid-cols-2 m-5 md:grid-cols-4 lg:grid-cols-5 bg-slate-200 rounded-md gap-2">
         {items.filter(item => item.tags.includes(activeScreen)).map((item) => (
           <Item
             key={item._id}

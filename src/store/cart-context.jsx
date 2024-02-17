@@ -1,4 +1,5 @@
 import { useEffect, useState, createContext } from "react";
+import axios from 'axios'
 
 export const cartCtx = createContext({
   cart: [],
@@ -12,11 +13,22 @@ export default function CartProvider({ children }) {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3001/api/clothingItems')
-      .then(response => response.json())
-      .then(data => setItems(data))
-      .catch(error => console.error('There was an error fetching items!', error));
+    // Define the function to fetch items
+    const fetchItems = async () => {
+      try {
+        const response = await axios.get(
+          "https://clothing-app-backend-v2.onrender.com/items"
+        );
+        setItems(response.data);
+        console.log(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
+    fetchItems();
   }, []);
+
 
   const addItemToCart = (itemId) => {
     let newItem = items.find((item) => item._id === itemId);
