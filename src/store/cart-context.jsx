@@ -4,6 +4,7 @@ import axios from 'axios'
 export const cartCtx = createContext({
   cart: [],
   items: [],
+  isLoading: false,
   addItemToCart: () => {},
   removeItemFromCart: () => {},
 });
@@ -11,15 +12,19 @@ export const cartCtx = createContext({
 export default function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
   const [items, setItems] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     // Define the function to fetch items
+    setIsLoading(true);
+
     const fetchItems = async () => {
       try {
         const response = await axios.get(
           "https://clothing-app-backend-v2.onrender.com/items"
         );
         setItems(response.data);
+        setIsLoading(false);
         console.log(response.data);
       } catch (error) {
         console.log(error);
@@ -45,7 +50,7 @@ export default function CartProvider({ children }) {
   };
 
   return (
-    <cartCtx.Provider value={{ cart, items, addItemToCart, removeItemFromCart }}>
+    <cartCtx.Provider value={{ cart, items, addItemToCart, removeItemFromCart, isLoading }}>
       {children}
     </cartCtx.Provider>
   );
